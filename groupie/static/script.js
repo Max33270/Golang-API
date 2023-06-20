@@ -21,13 +21,6 @@ function search() {
 
   document.getElementById("answer").innerHTML = ""
   for (i = 0; i < art.length; i++) {
-
-    // for (k = 0; k < members[i].length; k++) {
-    //   if (members[i].innerHTML.toLowerCase().includes(search_input.toLowerCase())) {
-    //     mmm = members[i];
-    //     console.log(mmm.innerHTML)
-    //   }
-    // }
     let a = ""
     for (k = 0; k < members2[i].length; k++){
       if (members2[i][k].toLowerCase().includes(search_input.toLowerCase())){
@@ -70,7 +63,6 @@ function search() {
 }
 
 function searchFilter() {
-
   document.getElementById("myDropdown").classList.toggle("show");
   document.getElementById("searchBar").value = "";
   document.getElementById("answer").innerHTML = ""
@@ -78,4 +70,3 @@ function searchFilter() {
   searchBar[0].style.borderRadius = '70px';
   document.getElementsByClassName("dropdown-content")[0].style.display = 'block';
 }
-
